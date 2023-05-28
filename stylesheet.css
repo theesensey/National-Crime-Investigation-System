@@ -1,0 +1,450 @@
+/*
+Add style to index
+Size-Specifies the size of the background images
+.main Class Selector
+*/
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image:url('image/police1.jfif');
+    background-size: cover;
+    }
+/*
+Navigation bar 
+*/
+.navindex {
+    background-color: NAVY;
+    overflow: hidden;
+    }
+
+.navindex hr {
+        margin-top: 2px;
+        margin-bottom: 0px;
+        border-top: 1px solid #eee;
+        box-sizing: content-box;
+    }
+    
+
+    /*Pseudo Class selector*/
+.navindex a:hover {
+    background-color: whitesmoke;
+    color: black;
+    }
+/*
+Padding-shorthand property to set values for the thickness of the padding area.
+*/
+.navindex a {
+    float:right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    display: block;
+    }
+    
+    /*add color to the active link*/
+
+    /*Class Selector Decendant Selector*/
+.navindex h1{
+    text-align: center;
+    color: white;
+    
+    }
+    
+.contentindex {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: whitesmoke;
+    }
+.contentindex h1{
+    font-size: 50px;
+    margin-top: 80px;
+    }
+    
+.contentindex p{
+    margin:20px auto;
+    font-weight:100 ;
+    line-height: 25px;
+    font-size: 20px;
+    }
+
+/*Login Style*/
+
+/*Type Selector*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    background-image: none;
+    margin: 0;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/*Type Selector*/
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.container .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 6px;
+}
+
+/*Class Selector*/
+.container {
+    width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+/*Class Selector*/
+.jumbotron {
+    background-color: #eee;
+    max-width: 375px;
+    padding: 15px;
+    margin: 0 auto;
+    color: #1a1a1a;
+    margin-top: 40px;
+}
+/*Direct Child Selector- Select elements that are direct 
+children of the first element*/
+.jumbotron>hr {
+    border-top-color: #d5d5d5;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+
+/*Type Selector*/
+p {
+    text-decoration-color: red;
+    margin: 0 0 10px;
+}
+
+/*Type Selector*/
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    height: 0;
+    box-sizing: content-box;
+}
+
+/*Type Selector*/
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+/*Select all elements Universal Selector*/
+* {
+    box-sizing: border-box;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-group-lg>.btn,
+
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn-log {
+    color: #fff;
+    background-color: green;
+    border-color: green;
+}
+
+.btn {
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+
+button,
+
+input {
+    font-family: inherit;
+    text-transform: none;
+    overflow: visible;
+    margin: 0;
+    font: inherit;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+/*Remove scroll from inout number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*Landing
+Flex layout allows responsive elements within a container to be automatically arranged depending upon screen size.
+Overflow specifies what should happen if content overflows an element's box.
+Relative is positioned relative to its normal position.*/
+
+.wrapper{
+
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    }
+/*Select elements that match all 
+the selector combinations*/
+.wrapper .sidebar {
+    width: 15%;
+    height: 100%;
+    background: dimgrey;
+    padding: 10px 0px;
+    position: fixed;
+    padding-right: -10px;
+    }
+    
+
+/*Username*/
+.wrapper .sidebar h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+    }
+/*AND Selector Select elements that match all 
+the selector combinations*/
+
+.wrapper .sidebar ul{
+        margin-left: -40px;
+        
+    }
+.wrapper .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid #676798;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    
+    }    
+    
+.wrapper .sidebar ul li a{
+    color: white;
+    display: block;
+    font-size: medium;
+    }
+    
+/*adds hovering effect to side bar*/
+.wrapper .sidebar ul li:hover{
+    background-color: rgb(195, 195, 224);
+    color: black;
+    cursor: pointer;
+    }  
+/*Select elements that match all 
+the selector combinations*/
+.wrapper .sidebar ul li a:hover{
+    color: black;
+}
+    
+.wrapper .main_content{
+    width: 100%;
+    margin-left: 8%;
+    position: fixed;
+    }
+    
+.wrapper .main_content .top{
+    padding: 10px 20px;
+    padding-bottom: 0px;
+    background: #fff;
+    color: #717171;
+    border-bottom: 1px solid grey;
+    }
+    
+.wrapper .main_content .info{
+    margin: 20px;
+    color: #717171;
+    line-height: 10px;
+    }
+
+
+/*Officer Wrapper*/
+
+.wrap {
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    height:650px;
+    overflow-y:auto
+}
+/* Class and Class Select elements that match all 
+the selector combinations*/
+.wrap .form {
+    margin: 35px 30px;
+    margin-top: auto;
+}
+
+/* Class and Class Select elements that match all 
+the selector combinations*/
+.form .dbl-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    justify-content: space-between;
+    
+}
+/*Select elements that match all 
+the selector combinations*/
+.dbl-field .field {
+    height: 35px;
+    position: relative;
+    width: calc(100% / 2 - 13px);
+    margin-bottom:13px;
+}
+
+select {
+    background-color: whitesmoke;
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+
+/* Class and Class Select elements that match all 
+the selector combinations*/
+.form .field input,
+
+
+.form textarea {
+    height: 100%;
+    width: 60%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+}
+
+/*Select elements with that class*/
+.btnres{
+    padding: 8px 24px;
+    cursor: pointer;
+    border: none;
+    background-color: red;
+    color: white;
+    margin: 8px 0;
+    
+
+}
+
+.btnsub{
+    padding: 8px 24px;
+    cursor: pointer;
+    border: none;
+    background-color: green;
+    color: white;
+    margin: 8px 0;
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 86%;
+    margin-bottom: 10px;
+    
+}
+/*adds cursor to button
+*/
+button {
+    cursor: pointer;
+}
+
+/*adds styling to the tables
+Select elements of that type
+Select div elements
+*/
+table {
+    border-spacing: 0;
+    width: 85%;
+    border: 1px solid grey;
+}
+/*OR selector 
+Select elements that match 
+any selector in the list*/
+td ,th {
+    text-align: left;
+    padding: 5px;
+    border: 1px solid grey;
+    line-height: 1.2;
+}
+
+.tabsort {
+    max-height: 580px;
+    overflow-y: scroll;
+}
+
+
